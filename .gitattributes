@@ -1,0 +1,5 @@
+# Signed demo artifacts must survive cloning and checkout byte-for-byte.
+frontend/public/demo-kit/** -text
+frontend/public/demo/** -text
+frontend/public/downloads/*.zip -text
+frontend/public/downloads/*.pdf -text

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "01-valid-human",
+    "label": "Human health \u00b7 TXT",
+    "file_name": "01-valid-human.txt",
+    "expected_status": "ACCEPTED",
+    "expected_reason": "VALID"
+  },
+  {
+    "id": "02-valid-animal",
+    "label": "Animal health \u00b7 CSV",
+    "file_name": "02-valid-animal.csv",
+    "expected_status": "ACCEPTED",
+    "expected_reason": "VALID"
+  },
+  {
+    "id": "03-valid-environment",
+    "label": "Environmental health \u00b7 JSON",
+    "file_name": "03-valid-environment.json",
+    "expected_status": "ACCEPTED",
+    "expected_reason": "VALID"
+  },
+  {
+    "id": "04-modified-file",
+    "label": "Modified file",
+    "file_name": "04-modified-file.txt",
+    "expected_status": "QUARANTINED",
+    "expected_reason": "HASH_MISMATCH"
+  },
+  {
+    "id": "05-invalid-signature",
+    "label": "Invalid signature",
+    "file_name": "05-invalid-signature.txt",
+    "expected_status": "QUARANTINED",
+    "expected_reason": "INVALID_SIGNATURE"
+  },
+  {
+    "id": "06-missing-metadata",
+    "label": "Missing metadata",
+    "file_name": "06-missing-metadata.txt",
+    "expected_status": "QUARANTINED",
+    "expected_reason": "INVALID_METADATA"
+  }
+]

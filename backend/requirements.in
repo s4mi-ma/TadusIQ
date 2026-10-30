@@ -1,0 +1,9 @@
+# Approved direct dependencies; requirements.lock records the resolved environment.
+fastapi==0.162.0
+starlette==1.10.0
+pydantic==2.13.4
+cryptography==49.0.0
+uvicorn==0.54.0
+python-multipart==0.0.30
+pytest==9.1.1
+httpx==0.28.1

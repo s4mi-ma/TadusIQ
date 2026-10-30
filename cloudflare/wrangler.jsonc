@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rapidready-verify",
+  "account_id": "b28e5ea17342761bbeb4ebebf2e0ac30",
+  "main": "src/worker.py",
+  "base_dir": "src",
+  "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": true,
+  "assets": {
+    "directory": "../frontend/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "rapidready-verify",
+    "database_id": "6b73b552-3ee0-4d04-883b-d6844ccae77b",
+    "migrations_dir": "migrations"
+  }]
+}
