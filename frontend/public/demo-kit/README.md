@@ -4,7 +4,7 @@ Six synthetic packages, each containing exactly three upload files. All are sign
 
 ## Present the workflow
 
-1. Open the hosted app at https://rapidready-verify.samihakim779.workers.dev/ and select simulated Lab B.
+1. Open the hosted app at https://rapidready-verify.tadusiq.workers.dev/ and select simulated Lab B.
 2. Pick one folder below. Select its payload, manifest.json and signature.txt together.
 3. Confirm three distinct assignments, then Use these files. Ready to submit is only a local attachment check.
 4. Submit manually. Inspect the recorded checks, suggested next step and linked audit events.

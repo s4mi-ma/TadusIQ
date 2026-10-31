@@ -1,6 +1,16 @@
 # Cloudflare deployment
 
-**Live app:** https://rapidready-verify.samihakim779.workers.dev
+**Live app:** https://rapidready-verify.tadusiq.workers.dev
+
+## Branded address 2026 10 31
+
+Renamed the account's workers.dev subdomain to `tadusiq` at the owner's request. The former personal-name URL no longer routes to this Worker. No redirect is provided by the account rename. Current public address: https://rapidready-verify.tadusiq.workers.dev/ .
+
+Kept the existing `rapidready-verify` Worker, D1 database, public keys and records. Updated the current README and demo instructions, rebuilt and visually checked all three PDF pages, and republished three changed assets. **Current Worker version: `226ba510-5d16-49c9-94d8-646b5bf04937`.** Earlier release entries below retain their historical URLs and version IDs as test evidence.
+
+Verified the branded site's health, browser Receiver ready state, exact public assets/downloads, all six actual package decisions and nine scoped events per decision. Existing record `6a334eb8-40cb-4c2c-8ae4-6233b356703f` and its audit remained unchanged. All signed files and the original MVP archive remain byte-identical. Initial TLS failures during propagation resolved without disabling verification.
+
+Current [demo ZIP](https://rapidready-verify.tadusiq.workers.dev/downloads/TadusIQ_Demo_Kit.zip) SHA-256: `9863bc37745d19b75941e02bd2e69155cc5c765dcaed71d314f6e13421d14502`. Current [guide](https://rapidready-verify.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf) SHA-256: `48f30aaf94029efad70ba549b59d2c95b6d768bf6b926d4e7d1c3c4a00a12b03`. Screenshots: `tadusiq-branded-live.jpg`.
 
 ## TadusIQ release 2026 10 30
 
