@@ -1,6 +1,8 @@
 # TadusIQ design
 
-Approved direction: Linear-inspired verification workspace, 2026-10-30. Source: `.agents/skills/awesome-design-md/references/design-md/linear.app/DESIGN.md`; adapt to RapidReady's synthetic laboratory workflow and identity.
+Approved direction: Linear-inspired verification workspace, 2026-10-30. Source: `.agents/skills/awesome-design-md/references/design-md/linear.app/DESIGN.md`; adapt to TadusIQ's synthetic laboratory workflow and identity.
+
+Current identity: **TadusIQ**. Public service: `tadusiq.tadusiq.workers.dev` (2026-10-31). The old RapidReady service name is retired from public branding and the current address. Keep original archives, historical evidence and compatible persisted identifiers intact.
 
 ## TadusIQ identity and feedback — 2026-10-30
 

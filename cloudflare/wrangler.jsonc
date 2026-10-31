@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "rapidready-verify",
+  "name": "tadusiq",
   "account_id": "b28e5ea17342761bbeb4ebebf2e0ac30",
   "main": "src/worker.py",
   "base_dir": "src",

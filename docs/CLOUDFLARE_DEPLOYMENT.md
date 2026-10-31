@@ -1,6 +1,16 @@
 # Cloudflare deployment
 
-**Live app:** https://rapidready-verify.tadusiq.workers.dev
+**Live app:** https://tadusiq.tadusiq.workers.dev
+
+## TadusIQ service name 2026 10 31
+
+The owner clarified that TadusIQ is the current name and RapidReady is retired. Renamed the existing Worker through Settings → General → Name to `tadusiq`, then aligned Wrangler's `name`. This removes the old project name from the public URL. The previous `rapidready-verify.tadusiq.workers.dev` URL is retired. The doubled `tadusiq` follows Cloudflare's `<worker>.<account>.workers.dev` format.
+
+**Current Worker version: `64193537-d7f8-4fec-9995-5a98a0cc4a94`.** D1 database ID, public signing keys, schema and existing records are unchanged. Updated current instructions, npm package metadata, local API title, guide and GitHub homepage. The interface remains TadusIQ; no TaduSER branding was applied. Historical evidence and original archives remain preserved.
+
+21 frontend tests and 69 backend regression tests passed (one existing TestClient deprecation warning). Production build passed. Published the renamed service with three updated static assets; all six downloadable packages returned expected decisions with record round-trips and nine scoped audit events each. Existing baseline record/audit remained unchanged. The public logo/gallery/download bytes match local sources. All 18 signed attachments, public key and catalog remain exact, including inside the verified 24-member ZIP. Rendered and inspected all three PDF pages.
+
+Current [demo ZIP](https://tadusiq.tadusiq.workers.dev/downloads/TadusIQ_Demo_Kit.zip) SHA-256: `92b8a67269f1dabec1c23420e12973ec36183747b042f37dacd915c9a9a53e2e`. Current [guide](https://tadusiq.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf) SHA-256: `6339d5d52ce75a28ffd19f59440e146009381774283edb64696ad98213f578f9`. Screenshot: `tadusiq-current-address.jpg`. Older entries below describe historical releases.
 
 ## Branded address 2026 10 31
 

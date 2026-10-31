@@ -1,6 +1,6 @@
 # TadusIQ
 
-[Live demo](https://rapidready-verify.tadusiq.workers.dev/) · [Demo packages](https://rapidready-verify.tadusiq.workers.dev/demo-kit/) · [Testing guide](https://rapidready-verify.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf)
+[Live demo](https://tadusiq.tadusiq.workers.dev/) · [Demo packages](https://tadusiq.tadusiq.workers.dev/demo-kit/) · [Testing guide](https://tadusiq.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf)
 
 A synthetic three-laboratory demonstration. Lab A prepares signed development packages, Lab B verifies them with SHA-256 and Ed25519, and Lab C reviews results and the SQLite audit. No patient data, biological analysis or external services are used.
 
@@ -72,14 +72,14 @@ The approved local MVP snapshot is `RapidReady_Verify_MVP.zip`; its verified con
 
 Cloudflare Workers + D1 was approved on 2026-10-27. The hosted receiver uses the same strict decision policy and multipart parser as the local app, with native WebCrypto Ed25519 and D1 atomic writes. See [Cloudflare deployment instructions and evidence](docs/CLOUDFLARE_DEPLOYMENT.md). The deployment log there distinguishes local runtime verification from a verified public deployment.
 
-Open the hosted app: **https://rapidready-verify.tadusiq.workers.dev**. The full public API acceptance suite and core browser workflow passed. No paid plan upgrade was performed; free-plan quotas apply. All roles and data remain synthetic; anyone with the URL can view this demonstration's records.
+Open the hosted app: **https://tadusiq.tadusiq.workers.dev**. The full public API acceptance suite and core browser workflow passed. No paid plan upgrade was performed; free-plan quotas apply. All roles and data remain synthetic; anyone with the URL can view this demonstration's records.
 
 
 ## TadusIQ review assets
 
-- [All six demos and the testing guide in one ZIP](https://rapidready-verify.tadusiq.workers.dev/downloads/TadusIQ_Demo_Kit.zip). Extract first, then open the included three-page PDF guide. A [standalone guide PDF](https://rapidready-verify.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf) is also available. The archive contains only demo files and presenter materials; it preserves the original MVP ZIP and does not install or publish the app.
+- [All six demos and the testing guide in one ZIP](https://tadusiq.tadusiq.workers.dev/downloads/TadusIQ_Demo_Kit.zip). Extract first, then open the included three-page PDF guide. A [standalone guide PDF](https://tadusiq.tadusiq.workers.dev/downloads/TadusIQ_Demo_Test_Guide.pdf) is also available. The archive contains only demo files and presenter materials; it preserves the original MVP ZIP and does not install or publish the app.
 
-- [Compare four editable logo options](https://rapidready-verify.tadusiq.workers.dev/brand/index.html). Option 01 is used in the live app. Source SVGs are under `frontend/public/brand`.
-- [Download six demo packages](https://rapidready-verify.tadusiq.workers.dev/demo-kit/index.html), or use `frontend/public/demo-kit`. Each numbered folder contains a payload, manifest and signature; select those three files together. See the kit's README for expected results and receiver compatibility. The separate local sender registered only a public demo key in the local and hosted registries. Private signing material was never exported.
+- [Compare four editable logo options](https://tadusiq.tadusiq.workers.dev/brand/index.html). Option 01 is used in the live app. Source SVGs are under `frontend/public/brand`.
+- [Download six demo packages](https://tadusiq.tadusiq.workers.dev/demo-kit/index.html), or use `frontend/public/demo-kit`. Each numbered folder contains a payload, manifest and signature; select those three files together. See the kit's README for expected results and receiver compatibility. The separate local sender registered only a public demo key in the local and hosted registries. Private signing material was never exported.
 - Error notifications remain visible until dismissed and supplement field-level guidance/retry controls. Errors do not retry automatically or create an accepted result. A recorded quarantine shows a warning notification and its checks.
-- TadusIQ is published on the existing Cloudflare Worker. Its URL, database identifiers, historical archives and saved appearance key retain their previous names for compatibility. The public demo signing key is registered in the hosted receiver, so all six supplied examples can be tested there.
+- TadusIQ is published at https://tadusiq.tadusiq.workers.dev/ on the renamed existing Cloudflare Worker. The public demo signing key is registered in the hosted receiver, so all six supplied examples can be tested there. Existing database identifiers and saved appearance preferences remain compatible; historical evidence and the original approved archive are preserved.

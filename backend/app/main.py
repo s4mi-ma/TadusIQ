@@ -33,7 +33,7 @@ def create_app(database: Database | None = None) -> FastAPI:
         db.initialize()
         yield
 
-    app = FastAPI(title="RapidReady Verify", version="0.1.0", lifespan=lifespan,
+    app = FastAPI(title="TadusIQ", version="0.1.0", lifespan=lifespan,
                   docs_url=None, redoc_url=None, openapi_url=None)
     app.state.db = db
 

@@ -167,3 +167,17 @@ No production deployment, real authentication, real laboratory equipment/data, s
 - ZIP integrity/checksums and new instructions verified. All signed demo bytes, public key/catalog and original MVP archive unchanged. Rendered and inspected all three updated PDF pages; no clipping or overflow. Screenshots: `tadusiq-branded-live.jpg`.
 
 - Delivery follow-up preserved the demo README's original LF bytes and regenerated only its ZIP entry/checksum. An initial build invocation from the repository root had no build script; running the existing frontend build from its directory passed. Final README/ZIP asset update retains the same guide and all signed files.
+
+
+## TadusIQ-only service verification — 2026-10-31
+
+- Renamed the existing Worker to tadusiq and aligned Wrangler; current public URL https://tadusiq.tadusiq.workers.dev/ . Deployed version `64193537-d7f8-4fec-9995-5a98a0cc4a94` with the existing D1 binding and three modified static assets. No schema/key/acceptance changes.
+- 21 frontend tests passed; production build passed in 522ms. 69 backend tests passed in 5.87s with one existing Starlette/HTTPX deprecation warning. Restricted test setup attempts were stopped after errors/stalling; the run with access to a fresh temporary directory passed.
+- Exact public logos, galleries, 18 attachments, PDF and ZIP matched source. All six live outcomes and nine scoped audit events per record passed; the pre-deployment baseline record and audit remained identical.
+  - 01-valid-human: ACCEPTED/VALID, `cf40ac97-44f5-4865-93e5-1471b4fe5b9a`.
+  - 02-valid-animal: ACCEPTED/VALID, `6b194f5a-987f-4c6c-bbe3-2c703de64e8f`.
+  - 03-valid-environment: ACCEPTED/VALID, `99253a05-51b2-4575-bc60-6f551f74a1c2`.
+  - 04-modified-file: QUARANTINED/HASH_MISMATCH, `108a0fe0-7d2b-4f89-8cc8-7490ee16b445`.
+  - 05-invalid-signature: QUARANTINED/INVALID_SIGNATURE, `b6d68745-26ca-44c8-86d9-863b60e19856`.
+  - 06-missing-metadata: QUARANTINED/INVALID_METADATA, `d53a5e2f-9f24-4927-9e9e-f480756ab3e3`.
+- Verified all 24 ZIP members, integrity/checksums and exact preservation of all signed attachments plus public key/catalog. Initial probe assumptions about Windows path separators and inclusion of gallery HTML were corrected; the 20 archived baseline files passed byte/hash comparison. Original MVP archive unchanged. All three updated PDF pages rendered and visually inspected without overflow. Screenshot: `tadusiq-current-address.jpg`.

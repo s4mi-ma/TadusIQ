@@ -1,4 +1,4 @@
-# RapidReady Verify project instructions
+# TadusIQ project instructions
 
 The owner approved continuing the Phase 0 recommended plan on 2026-10-26 and approved Cloudflare Workers + D1 hosting adaptation and free-plan compatibility testing on 2026-10-27. Use `docs/PHASE_0_AUDIT_AND_APPROVAL_PLAN.md` and the original French DOCX as recorded there. The local MVP archive contents were approved and packaged separately. Preserve that archive. On 2026-10-30, the owner explicitly requested importing https://github.com/VoltAgent/awesome-design-md for this project's redesign. That design reference collection is approved for import as the project-local `awesome-design-md` skill; no other third-party skill is adopted by this approval.
 

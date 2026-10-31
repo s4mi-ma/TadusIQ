@@ -1,1 +1,1 @@
-"""RapidReady Verify receiving application. No private signing keys."""
+"""TadusIQ receiving application. No private signing keys."""

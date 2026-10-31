@@ -1,5 +1,5 @@
 {
-  "name": "rapidready-cloudflare-tools",
+  "name": "tadusiq-cloudflare-tools",
   "private": true,
   "version": "0.1.0",
   "devDependencies": {"wrangler": "4.153.0"}
